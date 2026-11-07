@@ -31,8 +31,8 @@ document.querySelector('#home-button').addEventListener('click', () => scene.fly
 
 function updateClock() {
   const now = new Date();
-  document.querySelector('#date-display').textContent = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short' }).format(now);
-  document.querySelector('#clock-display').textContent = new Intl.DateTimeFormat('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(now);
+  document.querySelector('#date-display').textContent = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short', timeZone: 'Asia/Shanghai' }).format(now);
+  document.querySelector('#clock-display').textContent = new Intl.DateTimeFormat('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Asia/Shanghai' }).format(now);
 }
 updateClock();
 setInterval(updateClock, 1000);
