@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08171d" />
+  <title>山海 · 智慧城市数字孪生</title>
+</head>
+<body>
+  <div id="app">
+    <div id="cesiumContainer" aria-label="三维智慧城市地图"></div>
+    <div class="map-shade"></div>
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><div><strong>山海城市</strong><small>SHANHAI DIGITAL TWIN</small></div></div>
+      <div class="header-center"><span class="pulse"></span> 城市数字孪生平台 <i></i> <span>综合态势</span></div>
+      <div class="header-right"><span class="status-dot"></span> 系统运行正常 <b></b><span id="date-display">--</span><span id="clock-display">--:--:--</span></div>
+    </header>
+    <main class="dashboard">
+      <section class="left-column">
+        <div class="intro"><div class="eyebrow"><span></span> CITY OVERVIEW / 城市概览</div><h1>山海之间，<br><em>遇见未来城市</em></h1><p>以数字之眼，感知城市的每一次呼吸。</p></div>
+        <div class="card overview-card"><div class="card-head"><div><span class="card-index">01 /</span><h2>城市运行概览</h2></div><span class="tag">模拟数据</span></div><div class="metrics"><div><span>城市运行指数</span><strong>98.6<small> 分</small></strong><div class="metric-foot"><span class="up">↗ 2.4%</span> 较上月</div></div><div><span>城市覆盖面积</span><strong>2,468<small> km²</small></strong><div class="metric-foot">山海一体 · 协同发展</div></div></div><div class="divider"></div><div class="mini-row"><span>城市活力</span><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><b>良好</b></div></div>
+        <div class="card environment-card"><div class="card-head"><div><span class="card-index">02 /</span><h2>生态环境</h2></div><span class="tag">模拟数据</span></div><div class="env-grid"><div><span class="env-icon">✳</span><div><small>空气质量</small><strong>优 <em>32 AQI</em></strong></div></div><div><span class="env-icon">≈</span><div><small>水环境质量</small><strong>Ⅱ类 <em>稳定</em></strong></div></div><div><span class="env-icon">◒</span><div><small>绿地覆盖率</small><strong>42.8<em>%</em></strong></div></div><div><span class="env-icon">↗</span><div><small>清洁能源占比</small><strong>68.2<em>%</em></strong></div></div></div></div>
+        <div class="side-note"><span class="cross">✳</span><span>可持续城市 · 更美好的生活</span><span>01 — 03</span></div>
+      </section>
+      <section class="right-column">
+        <div class="card control-card"><div class="card-head"><div><span class="card-index">03 /</span><h2>场景实验室</h2></div><span class="live">● LIVE</span></div><p>探索自然环境与城市的交互</p><div class="control-block"><div class="control-label"><span>天气模拟</span><small>WEATHER</small></div><div class="weather-options" role="group" aria-label="天气模拟"><button class="weather active" data-weather="clear"><span>☀</span>晴朗</button><button class="weather" data-weather="rain"><span>☂</span>雨天</button><button class="weather" data-weather="snow"><span>❄</span>雪天</button><button class="weather" data-weather="fog"><span>≋</span>雾天</button></div></div><div class="control-block time-block"><div class="control-label"><span>昼夜变化</span><small id="time-value">14:00</small></div><input id="time-slider" type="range" min="0" max="23" value="14" aria-label="场景时间" /><div class="range-labels"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div></div><div class="control-block cloud-row"><div><span>体积云</span><small>VOLUMETRIC CLOUDS</small></div><label class="switch"><input id="cloud-toggle" type="checkbox" checked aria-label="显示体积云" /><span></span></label></div><button id="home-button" class="home-button"><span>⌖</span> 重置场景视角 <span>↗</span></button></div>
+        <div class="map-key"><span><i></i> 城市群</span><span><i></i> 生态水系</span><span><i></i> 山地生态</span></div>
+      </section>
+    </main>
+    <div class="bottom-center"><div class="coordinate"><span>●</span> SCENE 01 <b></b> 山海城市群</div><small>拖动旋转视角 · 滚轮缩放 · 右键调整倾斜</small></div>
+    <footer><span>SHANHAI <b>/</b> DIGITAL CITY LAB</span><span>自然与城市，共生共长</span></footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
